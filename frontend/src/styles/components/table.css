@@ -1,0 +1,35 @@
+/* =========================
+   TABLE / EVENT LIST
+   ========================= */
+.event-item {
+  background: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 10px;
+  padding: 16px;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.event-item:hover {
+  background: #2b3646;
+  border-color: #4b5563;
+}
+
+.event-meta {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.event-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #e5e7eb;
+}
+
+.time-badge {
+  background: rgba(56, 189, 248, 0.1);
+  color: #7dd3fc;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+}

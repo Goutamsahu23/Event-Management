@@ -1,0 +1,53 @@
+/* =========================
+   BUTTONS
+   ========================= */
+.btn {
+  display: inline-block;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid transparent;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.btn-primary {
+  background: #38bdf8;
+  color: #111827;
+  border-color: #38bdf8;
+}
+
+.btn-primary:hover {
+  background: #0ea5e9;
+  box-shadow: 0 4px 15px rgba(56, 189, 248, 0.2);
+}
+
+.btn-outline {
+  background: transparent;
+  color: #e5e7eb;
+  border: 1px solid #4b5563;
+}
+
+.btn-outline:hover {
+  background: #374151;
+  color: #f9fafb;
+  border-color: #6b7280;
+}
+
+.btn-danger {
+  background: #f43f5e;
+  color: white;
+  border-color: #f43f5e;
+}
+
+.btn-danger:hover {
+  background: #e11d48;
+  box-shadow: 0 4px 15px rgba(244, 63, 94, 0.2);
+}

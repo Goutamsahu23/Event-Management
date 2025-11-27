@@ -1,0 +1,63 @@
+/* =========================
+   DATE TIME PICKER
+   ========================= */
+
+.dtp-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+}
+
+.dtp-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #d1d5db;
+}
+
+.dtp-input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #4b5563;
+  border-radius: 8px;
+  font-size: 14px;
+  background: #1f2937;
+  color: #e5e7eb;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.dtp-input:hover {
+  border-color: #6b7280;
+}
+
+.dtp-input:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.25);
+}
+
+.dtp-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: #374151;
+}
+
+/* Calendar/time icon (optional) */
+.dtp-icon {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+  font-size: 16px;
+  transition: color 0.2s;
+}
+
+.dtp-input-wrapper {
+  position: relative;
+}
+
+/* Change icon color when input is focused */
+.dtp-input-wrapper:focus-within .dtp-icon {
+  color: #38bdf8;
+}

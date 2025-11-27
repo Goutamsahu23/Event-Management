@@ -1,0 +1,297 @@
+/* =========================
+   EVENTS PAGE LAYOUT
+   ========================= */
+.events-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.events-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.events-header-title {
+  max-width: 400px;
+}
+
+.events-header-subtitle {
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+.events-columns {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.4fr);
+  gap: 24px;
+}
+
+@media (max-width: 992px) {
+  .events-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Card header inside Events */
+.events-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.events-card-header-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.small-text {
+  font-size: 13px;
+}
+
+.events-status-text {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.events-error-text {
+  font-size: 13px;
+  color: #f87171;
+}
+
+.events-empty {
+  font-size: 14px;
+  color: #9ca3af;
+  text-align: center;
+  padding: 32px 0;
+}
+
+/* Events list items */
+.events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: 550px;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+.event-item-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.event-item-profiles {
+  font-size: 13px;
+  color: #d1d5db;
+  font-weight: 500;
+}
+
+.event-item-times {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #d1d5db;
+}
+
+.event-item-times-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.event-item-meta {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+/* Badges */
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.badge-muted {
+  background: #374151;
+  color: #d1d5db;
+}
+
+/* Event actions */
+.event-actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+}
+
+.btn-small {
+  padding: 6px 12px;
+  font-size: 13px;
+}
+
+/* Calendar helper text */
+.calendar-helper {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+
+/* =========================
+   EDIT EVENT FORM
+   ========================= */
+.edit-event-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.edit-event-section-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #d1d5db;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #374151;
+}
+
+.edit-event-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.edit-event-input,
+.edit-event-textarea {
+  width: 100%;
+  border: 1px solid #4b5563;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  background: #1f2937;
+  color: #e5e7eb;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.edit-event-textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.edit-event-input:focus,
+.edit-event-textarea:focus {
+  outline: none;
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+}
+
+.edit-event-row {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+.event-form-row > .dtp-wrapper,
+.edit-event-row > .dtp-wrapper {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .event-form-row,
+  .edit-event-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .event-form-row > .dtp-wrapper,
+  .edit-event-row > .dtp-wrapper {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+
+.edit-event-error {
+  font-size: 13px;
+  color: #f87171;
+}
+
+.edit-event-submit {
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: #38bdf8;
+  border: none;
+  color: #111827;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.edit-event-submit:hover {
+  background: #0ea5e9;
+}
+
+.edit-event-submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: #374151;
+  color: #9ca3af;
+}
+
+.edit-event-note-label {
+  font-size: 12px;
+  color: #9ca3af;
+  margin-bottom: 4px;
+}
+
+
+/* =========================
+   EVENT DETAILS (VIEW MODE)
+   ========================= */
+.event-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 28px;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.event-details-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.event-details-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #9ca3af;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.event-details-value {
+  font-size: 14px;
+  color: #e5e7eb;
+}
+
+.event-details-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  font-size: 12px;
+  border-radius: 999px;
+  background: #38bdf8;
+  color: #111827;
+  font-weight: 500;
+}

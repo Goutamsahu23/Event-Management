@@ -1,0 +1,162 @@
+/* =========================
+   PROFILE SELECTOR DROPDOWN
+   ========================= */
+.profile-dropdown {
+  position: relative;
+  font-size: 14px;
+  width: 100%;
+  max-width: 240px;
+}
+
+.profile-dropdown-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #d1d5db;
+  margin-bottom: 6px;
+}
+
+.profile-dropdown-trigger {
+  width: 100%;
+  background: #1f2937;
+  border: 1px solid #4b5563;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.profile-dropdown-trigger:hover,
+.profile-dropdown-trigger[aria-expanded="true"] {
+  border-color: #38bdf8;
+}
+
+.profile-dropdown-trigger[aria-expanded="true"] {
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+}
+
+.profile-dropdown-trigger-text {
+  color: #e5e7eb;
+}
+
+.profile-dropdown-panel {
+  position: absolute;
+  right: 0;
+  width: 280px;
+  background: #2b3646;
+  border: 1px solid #4b5563;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+  padding: 8px;
+  margin-top: 8px;
+  z-index: 50;
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+/* Search box */
+.profile-dropdown-search {
+  margin-bottom: 8px;
+}
+
+.profile-dropdown-search input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #4b5563;
+  font-size: 13px;
+  background: #1f2937;
+  color: #e5e7eb;
+}
+
+.profile-dropdown-search input:focus {
+  outline: none;
+  border-color: #38bdf8;
+}
+
+/* List */
+.profile-dropdown-item {
+  padding: 10px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #d1d5db;
+  transition: background-color 0.2s;
+}
+
+.profile-dropdown-item:hover {
+  background: #374151;
+}
+
+.profile-dropdown-item-selected {
+  background: rgba(56, 189, 248, 0.1);
+  color: #7dd3fc;
+  font-weight: 500;
+}
+.profile-dropdown-item-selected:hover {
+  background: rgba(56, 189, 248, 0.2);
+}
+
+/* Quick add section */
+.profile-dropdown-add {
+  border-top: 1px solid #4b5563;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.profile-dropdown-add-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #9ca3af;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.profile-dropdown-add input {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #4b5563;
+  margin-bottom: 8px;
+  font-size: 13px;
+  background: #1f2937;
+  color: #e5e7eb;
+}
+
+.profile-dropdown-add input:focus {
+  outline: none;
+  border-color: #38bdf8;
+}
+
+.profile-dropdown-error {
+  font-size: 12px;
+  color: #f87171;
+  margin-bottom: 8px;
+}
+
+.profile-dropdown-add-btn {
+  width: 100%;
+  padding: 8px 12px;
+  background: #38bdf8;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #111827;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.profile-dropdown-add-btn:hover {
+  background: #0ea5e9;
+}
+
+.profile-dropdown-empty {
+  font-size: 13px;
+  color: #9ca3af;
+  text-align: center;
+  padding: 12px 0;
+}
