@@ -19,6 +19,13 @@ To get the application running locally, follow these steps.
 -   npm
 -   MongoDB (local or a cloud instance like MongoDB Atlas)
 
+### Cloning the repository
+
+```bash
+git clone https://github.com/Goutamsahu23/Event-Management.git
+cd Event-Management
+```
+
 ### Backend Setup
 
 1.  **Navigate to the backend directory:**
